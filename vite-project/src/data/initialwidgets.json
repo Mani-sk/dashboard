@@ -1,0 +1,36 @@
+{
+  "CSPM Executive Dashboard": [
+    {
+      "name": "Cloud Accounts",
+      "text": "AWS, Azure, GCP config scan"
+    },
+    {
+      "name": "Cloud Account Risk Assessment",
+      "text": "Assess risks across cloud accounts"
+    },
+    {
+      "name": "IAM Policy Violations",
+      "text": "Detect permission issues"
+    }
+  ],
+  "CWPP Dashboard": [
+    {
+      "name": "Container Status",
+      "text": "Runtime container threat detection"
+    },
+    {
+      "name": "Host Vulnerability Summary",
+      "text": "Scan results for hosts and workloads"
+    }
+  ],
+  "Registry Scan": [
+    {
+      "name": "Scan Results",
+      "text": "Summary of image vulnerabilities"
+    },
+    {
+      "name": "Vulnerable Images",
+      "text": "Images with critical CVEs"
+    }
+  ]
+}

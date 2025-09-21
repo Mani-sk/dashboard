@@ -1,0 +1,260 @@
+/* Basic resets and layout */
+/* Basic resets and layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+.App {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* Header */
+h2 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  padding: 6px 12px;
+  border: none;
+  background-color: #4f46e5; /* Indigo-600 */
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4338ca; /* Indigo-700 */
+}
+
+/* Search input */
+input[type="text"] {
+  padding: 6px 10px;
+  margin-left: 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 220px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+/* Category headers */
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #4b5563; /* Gray-700 */
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content */
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 320px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Widget Card */
+/* .widget-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+  width: 200px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  position: relative;
+  background: #fff;
+  transition: box-shadow 0.2s ease;
+}
+
+.widget-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.widget-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+/* Remove button on widget */
+/* .widget-card button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  color: #ef4444; /* Red-500 */
+  /* font-size: 16px;
+  cursor: pointer;
+} */ 
+
+/* .widget-card button:hover {
+  color: #b91c1c; /* Red-700 */
+/* .widget-card {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;             /* Makes it circular */
+  /* border: 2px solid #4f46e5;      /* Indigo border */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: relative;
+  text-align: center;
+  font-weight: 500;
+  color: #4f46e5;
+  cursor: pointer;
+  transition: transform 0.2s ease; */
+
+
+/* .widget-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+} */
+
+/* .widget-card strong {
+  font-size: 14px;
+  margin-bottom: 4px;
+} */
+
+/* .widget-card p {
+  font-size: 12px;
+  color: #555;
+  padding: 0 6px;
+} */
+
+/* Remove (X) Button */
+/* .widget-card button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: transparent;
+  border: none;
+  color: #ef4444; /* Red */
+  /* font-size: 16px;
+  cursor: pointer; */
+/* .widget-card {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid;        /* color comes from inline style */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: relative;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.widget-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.widget-card strong {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.widget-card p {
+  font-size: 12px;
+  color: inherit;  /* Inherit text color from style */
+  /* padding: 0 6px;
+}
+
+.widget-card button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: transparent;
+  border: none;
+  color: #ef4444;
+  font-size: 16px;
+  cursor: pointer;
+} */
+  .widget-card {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 5px solid;            /* ✅ Thick border */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;                 /* white text on gradient */
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.widget-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.widget-card strong {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: white;
+}
+
+.widget-card p {
+  font-size: 12px;
+  padding: 0 8px;
+  color: white;
+}
+
+.widget-card button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  color: red;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0 5px;
+  line-height: 1;
+}
+
